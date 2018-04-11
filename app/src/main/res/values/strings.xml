@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Med-Manager</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="medication_dosage">Medication Dosage</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="medicine_description">Medicine Description</string>
+    <string name="medicine_frequency">Medicine Frequency or Interval</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+
+    <string name="name">Name</string>
+
+    <string name="add_med">Add Medication</string>
+    <string name="profile">Profile</string>
+    <string name="logOut">Log Out</string>
+    <string name="about">About</string>
+
+    <string name="amadi_promise">Amadi Promise</string>
+    <string name="email">Wizpna@gmail.com</string>
+    <string name="sign_in">Sign In with Google</string>
+    <string name="welcome">Welcome</string>
+    <string name="med_manager">Medication Manager</string>
+
+    <string name="about_app">MedicalManager is a simple mobile application that enables users to store the list of medications and also reminds them when to take their medications.</string>
+</resources>

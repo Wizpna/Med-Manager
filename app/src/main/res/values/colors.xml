@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b5e4fd</color>
+    <color name="colorPrimaryDark">#a3dbfa</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gws_color_material_grey_500">#9E9E9E</color>
+    <color name="grey_500">#DBD8D9</color>
+    <color name="bg_login_button">#6bc6f9</color>
+    <color name="blue">#2196F3</color>
+</resources>

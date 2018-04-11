@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.promise.med_manager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddNewMedication"
+            android:parentActivityName=".HomeActivity"
+            android:label="Add New Medication"/>
+
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".HomeActivity"
+            android:label="About Details"/>
+
+        <activity android:name=".MedicationDetail"
+            android:parentActivityName=".HomeActivity"
+            android:label="Medication Details"/>
+
+        <activity android:name=".ProfileActivity"
+            android:parentActivityName=".HomeActivity"
+            android:label="Profile Details" />
+
+        <activity android:name=".EditProfileActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:label="Edit Profile" />
+
+        <activity android:name=".EditMedication"
+            android:parentActivityName=".HomeActivity"
+            android:label="Edit Medication">
+
+        </activity>
+
+        <activity
+            android:name="com.example.promise.med_manager.DoSomething"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver android:name="com.example.promise.med_manager.AlarmReceiver" android:process=":remote" />
+    </application>
+
+</manifest>

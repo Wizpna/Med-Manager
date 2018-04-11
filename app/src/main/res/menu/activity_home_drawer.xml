@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_addMed"
+            android:icon="@drawable/ic_add_medicine"
+            android:title="@string/add_med" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_action_person"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/logOut" />
+    </group>
+
+</menu>
