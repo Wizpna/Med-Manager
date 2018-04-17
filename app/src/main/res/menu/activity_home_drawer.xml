@@ -4,10 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_addMed"
-            android:icon="@drawable/ic_add_medicine"
-            android:title="@string/add_med" />
+
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_action_person"

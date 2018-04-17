@@ -13,7 +13,10 @@
         android:roundIcon="@drawable/bg"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,39 +26,57 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
         <activity android:name=".AddNewMedication"
             android:parentActivityName=".HomeActivity"
-            android:label="Add New Medication"/>
+            android:label="Add New Medication"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".AboutActivity"
             android:parentActivityName=".HomeActivity"
-            android:label="About Details"/>
+            android:label="About Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".MedicationDetail"
             android:parentActivityName=".HomeActivity"
-            android:label="Medication Details"/>
+            android:label="Medication Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".ProfileActivity"
             android:parentActivityName=".HomeActivity"
-            android:label="Profile Details" />
+            android:label="Profile Details"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
 
         <activity android:name=".EditProfileActivity"
             android:parentActivityName=".ProfileActivity"
-            android:label="Edit Profile" />
+            android:label="Edit Profile"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
 
         <activity android:name=".EditMedication"
             android:parentActivityName=".HomeActivity"
-            android:label="Edit Medication">
+            android:label="Edit Medication"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
 
         </activity>
 
         <activity
             android:name="com.example.promise.med_manager.DoSomething"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
 
         <receiver android:name="com.example.promise.med_manager.AlarmReceiver" android:process=":remote" />
+
     </application>
 
 </manifest>

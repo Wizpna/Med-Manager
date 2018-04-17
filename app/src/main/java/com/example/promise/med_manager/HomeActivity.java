@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -28,6 +29,8 @@ public class HomeActivity extends AppCompatActivity
     //calling variables
     DbAdapter db;
     SimpleCursorAdapter adapter;
+
+    FloatingActionButton floatingActionButton;
 
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
@@ -66,27 +69,35 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), AddNewMedication.class);
+                startActivity(intent);
+            }
+        });
+
 
         //calling DbAdapter
         db = new DbAdapter(this);
         db.open();
-        //initially insert some data
-        //db.insert("Color Picker", "+840885654", "info@icyarena.com", "US");
-        //db.insert("Mike Helen", "+808853437", "halen@icyarena.com", "UK");
-        //db.insert("Robart Pink", "+808851234", "robart@icyarena.com", "AUS");
-        //display data
+
         ListView lv = (ListView) findViewById(R.id.listView1);
+        View emptyView = findViewById(R.id.empty_view);
+        lv.setEmptyView(emptyView);
         int layoutstyle = R.layout.liststyle;
         int[] xml_id = new int[]{
                 R.id.txtname,
-                R.id.txtnumber,
+                //R.id.txtnumber,
                 R.id.txtTime,
                 R.id.txtStartDate,
                 R.id.txtEndDate
         };
         String[] column = new String[]{
                 "medName",
-                "dosage",
+                //"dosage",
                 "medTime",
                 "medStartDate",
                 "medEndDate"
@@ -157,15 +168,10 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_addMed) {
-            // Handle the camera action
-            Intent medEditActivity = new Intent(HomeActivity.this, AddNewMedication.class);
-            startActivity(medEditActivity);
-
-        } else if (id == R.id.nav_profile) {
+        if (id == R.id.nav_profile) {
+            // Handle the navigation action
             Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
             startActivity(intent);
-
         } else if (id == R.id.nav_about) {
             Intent intent = new Intent(HomeActivity.this, AboutActivity.class);
             startActivity(intent);

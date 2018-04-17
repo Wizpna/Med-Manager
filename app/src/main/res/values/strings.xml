@@ -7,6 +7,8 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="no_cardetails">Click on the button below to add medication!</string>
+
 
     <string name="medication_dosage">Medication Dosage</string>
     <string name="medication_name">Medication Name</string>
@@ -28,5 +30,5 @@
     <string name="welcome">Welcome</string>
     <string name="med_manager">Medication Manager</string>
 
-    <string name="about_app">MedicalManager is a simple mobile application that enables users to store the list of medications and also reminds them when to take their medications.</string>
+    <string name="about_app">Medication Manager is a simple mobile application that enables users to store the list of medications and also reminds them when to take their medications.</string>
 </resources>

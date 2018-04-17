@@ -112,7 +112,7 @@ public class AddNewMedication extends AppCompatActivity {
                         } else {
                             amPm = "AM";
                         }
-                        editTextTime.setText(String.format("%02d:%02d", hourOfDay, minutes) + amPm);
+                        editTextTime.setText(String.format("%02d:%02d", hourOfDay, minutes) + "" + amPm);
                     }
                 }, currentHour, currentMinute, false);
 

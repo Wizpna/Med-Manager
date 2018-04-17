@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
     </LinearLayout>
@@ -14,8 +15,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="45dp">
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,9 +30,9 @@
                 android:layout_height="wrap_content"
                 android:alpha="0.8"
                 android:text="@string/medication_name"
-                android:textStyle="normal"
+                android:textColor="#000000"
                 android:textSize="16sp"
-                android:textColor="#000000"/>
+                android:textStyle="normal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,9 +63,9 @@
                     android:inputType="textCapWords"
                     android:padding="@dimen/padding_average"
                     android:singleLine="true"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/grey_500"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -75,9 +76,9 @@
                 android:layout_marginTop="@dimen/margin_small"
                 android:alpha="0.8"
                 android:text="@string/medication_dosage"
-                android:textStyle="normal"
+                android:textColor="#000000"
                 android:textSize="16sp"
-                android:textColor="#000000" />
+                android:textStyle="normal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,9 +108,9 @@
                     android:background="@android:color/transparent"
                     android:inputType="number"
                     android:padding="@dimen/padding_average"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/grey_500"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -120,9 +121,9 @@
                 android:layout_marginTop="@dimen/margin_small"
                 android:alpha="0.8"
                 android:text="@string/medicine_description"
-                android:textStyle="normal"
+                android:textColor="#000000"
                 android:textSize="16sp"
-                android:textColor="#000000" />
+                android:textStyle="normal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -152,9 +153,9 @@
                     android:background="@android:color/transparent"
                     android:inputType="textCapSentences"
                     android:padding="@dimen/padding_average"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/grey_500"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -165,9 +166,9 @@
                 android:layout_marginTop="@dimen/margin_small"
                 android:alpha="0.8"
                 android:text="@string/medicine_frequency"
-                android:textStyle="normal"
+                android:textColor="#000000"
                 android:textSize="16sp"
-                android:textColor="#000000" />
+                android:textStyle="normal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -197,8 +198,8 @@
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
                     android:gravity="center"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -208,8 +209,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
                 android:text="Medication Time"
-                android:textSize="16sp"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -239,8 +240,8 @@
                     android:background="@android:color/transparent"
                     android:focusable="false"
                     android:padding="12dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -250,8 +251,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
                 android:text="@string/start_date"
-                android:textSize="16sp"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -280,8 +281,8 @@
                     android:layout_weight="5.5"
                     android:background="@android:color/transparent"
                     android:padding="12dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -291,8 +292,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
                 android:text="@string/end_date"
-                android:textSize="16sp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -321,8 +322,8 @@
                     android:layout_weight="5.5"
                     android:background="@android:color/transparent"
                     android:padding="12dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -332,38 +333,37 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="#a3dbfa">
-        <Button
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="5dp"
-            android:text="Edit"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:onClick="Edit"
-            android:textColor="@color/black"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="10dp"
-            android:background="@color/white"
-            />
 
         <Button
             android:layout_width="120dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
             android:layout_marginBottom="2dp"
-            android:layout_marginTop="5dp"
-            android:textStyle="bold"
-            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:onClick="Edit"
+            android:text="Edit"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:onClick="Delete"
             android:text="Delete"
             android:textColor="@color/black"
-            android:onClick="Delete"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:background="@color/white"
-            />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 </RelativeLayout>
 

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -44,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+            this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+            //Remove notification bar
+            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setContentView(R.layout.activity_main);
             button = (Button) findViewById(R.id.googleBtn);
             mAuth = FirebaseAuth.getInstance();
@@ -109,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 firebaseAuthWithGoogle(account);
             } else{
                 // Google Sign In failed, update UI appropriately
-                Toast.makeText(MainActivity.this, "Authentication went wrong", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "No internet connection, Please try again", Toast.LENGTH_LONG).show();
                 // ...
             }
         }

@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#99D5F7"
     tools:context="com.example.promise.med_manager.AboutActivity">
 
     <ImageView
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="260dp"
         android:src="@drawable/bg" />
 
     <TextView
@@ -20,6 +21,6 @@
         android:textStyle="normal"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:textColor="@color/black"/>
 </LinearLayout>
